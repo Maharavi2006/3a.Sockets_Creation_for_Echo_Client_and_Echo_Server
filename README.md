@@ -9,8 +9,9 @@ Sockets Links.
  server .
 4. Send and receive the message using the send function in socket.
 ## PROGRAM
-client.py
 ```
+client.py
+
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
@@ -19,8 +20,10 @@ while True:
     s.send(msg.encode())
     print("Server > ",s.recv(1024).decode())
 ```
-server.py
+
 ```
+server.py
+
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -33,9 +36,11 @@ while True:
 
 ## OUTPUT
 
+client.py
+
 ![image](https://github.com/user-attachments/assets/7c8f8d9d-8d46-4fe7-a3ef-fd0f88e50d13)
 
-
+server.py
 
 ![image](https://github.com/user-attachments/assets/eba2dcb4-8658-47f6-932d-3de9d22d04af)
 
